@@ -1,47 +1,27 @@
-﻿# Python
+# Python
 __pycache__/
 *.py[cod]
-*.pyo
-*.pyd
-.pytest_cache/
-.ruff_cache/
-.mypy_cache/
+.ipynb_checkpoints/
 
 # Virtual environments
 .venv/
 venv/
 env/
 
-# Environment variables and secrets
-.env
-.env.*
-!.env.example
-
-# Jupyter
-.ipynb_checkpoints/
-
-# Raw and private data
+# Data
 data/raw/
-*.xlsx
-*.xls
+data/processed/
 *.csv
+*.xlsx
 *.parquet
-*.pkl
-*.sav
-*.zip
 
-# Allow placeholder files
-!data/raw/.gitkeep
-!data/processed/.gitkeep
+# Keep public sample data only
+!data/sample/
+!data/sample/*
 
-# Reports cache/temp files
-reports/temp/
-reports/cache/
-
-# OS files
+# System files
 .DS_Store
 Thumbs.db
 
-# IDE files
-.vscode/
-.idea/
+# Environment files
+.env
